@@ -5,12 +5,26 @@
     <title>Task App</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+
+        .task-form {
+            display: flex;
+            width: 100%;
+            margin: 10px;
+        }
+        .text-form-left {
+            flex: 90%;
+        }
+
+        .text-form-right {
+            flex: 10%;
+        }
     </style>
 </head>
 
 <body>
     <form id="task-form">
+
+        <button type="submit">Add</button>
         <div class="task-form-row">
             <input id="task-description" class="task-form-left" type="text" placeholder="task description" required>
             <select id="task-status" class="task-form-right" name="task-status">
